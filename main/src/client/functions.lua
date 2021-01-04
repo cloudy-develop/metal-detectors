@@ -42,7 +42,7 @@ end
 function HasAccess(detector)
 
     for i,var0 in pairs(config.players) do
-        if (var0.id == client.player.info.fivemId) then
+        if (var0.fivemId == client.player.info.fivemId) then
             for i,var1 in pairs(var0.detectors) do
                 if (var1 == detector.info.id) then
                     DebugPrint("^3DEBUG: ^0Checked for access. Returned (true).")

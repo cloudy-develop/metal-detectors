@@ -1,8 +1,8 @@
 config = {
 
 	players = {
-		{ id = nil, detectors = { 1, 2, 3 } },
-		{ id = nil, detectors = { 4 } }
+		{ fivemId = nil, detectors = { 1, 2, 3 } },
+		{ fivemId = nil, detectors = { 4 } }
 	},
 
     detectors = {
@@ -28,6 +28,23 @@ config = {
 		}
 	},
 
-	debug = true
+	printFivemId = false, -- Prints players FiveM ID when they join in the server console.
+	debug = false -- Prints debug information for trouble shooting.
 
 }
+
+-- Config Information --
+
+-- "players" --
+-- "fivemId" = The FiveM ID of the player you want to give access.
+-- "detectors" = A list of detector id's that you want to give the player access to.
+
+-- "detectors" --
+-- "info/id" = The id of the metal detector. (They cannot be the same!)
+-- "info/sound/range" = The range that you want to alarm to be heard.
+-- "coords/x" = The 'x' coordinate of the metal detector.
+-- "coords/y" = The 'y' coordinate of the metal detector.
+-- "coords/z" = The 'z' coordinate of the metal detector.
+-- "coords/radius" = The radius of the metal detector to start scanning them.
+-- "entity/enable" = If 'true' this creates a metal detector at the coords defined above.
+-- "entity/heading" = If "entity/enable" is 'true' this sets the heading of the metal detector. (Set to 'nil' if "entity/enable" is 'false'.)

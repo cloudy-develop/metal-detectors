@@ -8,6 +8,10 @@ Citizen.CreateThread(function()
         Citizen.Wait(0)
     end
 
+    if (config.printFivemId) then
+        TriggerServerEvent('PrintFivemId', client.player.info.serverId, client.player.info.fivemId)
+    end
+
     for i,var0 in pairs(config.detectors) do
         table.insert(var0, { data = { distance = nil, enable = nil } })
         DebugPrint("^3DEBUG: ^0Inserted data table into detector " .. var0.info.id .. ".")
