@@ -1,7 +1,7 @@
 Citizen.CreateThread(function()
 
     client.player.info.id = PlayerId()
-	client.player.info.serverId = GetPlayerServerId(client.player.info.id)
+    client.player.info.serverId = GetPlayerServerId(client.player.info.id)
     TriggerServerEvent('GetFivemId', client.player.info.serverId)
 
     while (client.player.info.fivemId == nil) do

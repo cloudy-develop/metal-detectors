@@ -160,11 +160,9 @@ function HasWeapon(ped)
 end
 
 function DetectorAlarm(detector)
-
     RequestScriptAudioBank('dlc_xm_iaa_player_facility_sounds', false)
     PlaySoundFromCoord(-1, 'scanner_alarm_os', detector.coords.x, detector.coords.y, detector.coords.z, 'dlc_xm_iaa_player_facility_sounds', false, detector.info.sound.range, false)
     DebugPrint("^3DEBUG: ^0Played alarm on detector " .. detector.info.id .. ".")
-
 end
 
 function DebugPrint(text)
