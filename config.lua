@@ -24,7 +24,7 @@ config = {
 		{ -- Adds Metal Detector at Lifeinvader (With Entity).
 			info = { id = 4, sound = { range = 5 } },
 			coords = { x = -1073.40, y = -249.55, z = 37.76, radius = 0.5 },
-			entity = { enable = true, heading = 117.00 }
+			entity = { enable = true, heading = 117.50 }
 		}
 	},
 

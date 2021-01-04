@@ -5,7 +5,7 @@ author 'Cloudy'
 description 'Metal Detectors'
 version '0.1'
 
-data_file 'DLC_ITYP_REQUEST' 'stream/props/sec_props_metadata_01.ytyp'
+data_file 'DLC_ITYP_REQUEST' 'stream/props/ch_prop_ch_casino_security.ytyp'
 
 client_scripts {
     

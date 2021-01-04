@@ -1,6 +1,6 @@
 function CreateDetector(detector)
 
-    local detectorHash = GetHashKey('PROP_SEC_METAL_DETECTOR_01')
+    local detectorHash = GetHashKey('ch_prop_ch_metal_detector_01a')
 
     local entityOld = GetClosestObjectOfType(detector.coords.x, detector.coords.y, detector.coords.z - 1.0, 10.0, detectorHash, false, false, false)
     while (entityOld == nil) do
@@ -161,8 +161,8 @@ end
 
 function DetectorAlarm(detector)
 
-    RequestScriptAudioBank('DLC_XM_IAA_PLAYER_FACILITY_SOUNDS', false)
-    PlaySoundFromCoord(-1, 'SCANNER_ALARM_OS', detector.coords.x, detector.coords.y, detector.coords.z, 'DLC_XM_IAA_PLAYER_FACILITY_SOUNDS', false, detector.info.sound.range, false)
+    RequestScriptAudioBank('dlc_xm_iaa_player_facility_sounds', false)
+    PlaySoundFromCoord(-1, 'scanner_alarm_os', detector.coords.x, detector.coords.y, detector.coords.z, 'dlc_xm_iaa_player_facility_sounds', false, detector.info.sound.range, false)
     DebugPrint("^3DEBUG: ^0Played alarm on detector " .. detector.info.id .. ".")
 
 end
