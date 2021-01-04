@@ -2,6 +2,11 @@ function CreateDetector(detector)
 
     local detectorHash = GetHashKey('ch_prop_ch_metal_detector_01a')
 
+    RequestModel(detectorHash)
+    while not (HasModelLoaded(detectorHash)) do
+        Wait(0)
+    end
+
     local entityOld = GetClosestObjectOfType(detector.coords.x, detector.coords.y, detector.coords.z - 1.0, 10.0, detectorHash, false, false, false)
     while (entityOld == nil) do
         Wait(0)
