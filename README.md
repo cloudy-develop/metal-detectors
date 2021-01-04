@@ -3,7 +3,7 @@
 A FiveM resource adding the ability to add metal detectors around the map that check to see if a ped has a weapon.
 
 ## Information
-Metal Detectors is a script that gives you the ability to add metal detectors around the map either with or without a entity.  You can give access to certain players so they can walkthrough a metal detector without it going off.  There is plenty of custimization options for this script to work just right for you.
+Metal Detectors is a script that gives you the ability to add metal detectors around the map either with or without an entity. You can give access to certain players so they can walk through a metal detector without it going off. There is plenty of customization options for this script to work just right for you.
 
 ## How to Install
  
